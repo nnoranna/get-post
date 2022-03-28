@@ -20,7 +20,7 @@ const serverFun = (req, res) => {
 		if(err){
 			res.statusCode = 404;
 			res.end(errorHTML);
-		}else{
+		} else {
 			if(fs.statSync(filePath).isDirectory()) {
 				filePath += '/index.html';
 			}
